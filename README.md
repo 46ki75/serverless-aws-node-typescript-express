@@ -29,6 +29,14 @@ cd my-project  # Replace "my-project" with your chosen project name
 npm install
 ```
 
+Before deploying your project, it's crucial to compile the TypeScript files into JavaScript. This ensures that all type checks are passed, and the code is ready for production. You can achieve this by running the following npm command:
+
+```bash
+npm run build
+```
+
+This command compiles all TypeScript files in the src directory to JavaScript, outputting them into the dist directory. The dist directory is then used during the deployment process. Make sure to run this command every time you make changes to your TypeScript files and intend to deploy those changes.
+
 ### Serverless Framework Setup
 
 Initialize the Serverless Framework to set up your new project:
@@ -37,7 +45,7 @@ Initialize the Serverless Framework to set up your new project:
 serverless
 ```
 
-This will guide you through configuring your AWS credentials and setting up the environment.
+During this initialization process, you will be asked if you want to deploy the project. Before proceeding with the deployment, make sure to build the project using `npm run build` to compile the TypeScript files into JavaScript. Otherwise, you may encounter issues during the deployment.
 
 ### Running Locally
 
@@ -47,7 +55,7 @@ To run the Express server in your local environment, use:
 npm start
 ```
 
-This will start the server on a predefined port, and it will be accessible via browser or Postman.
+This command will automatically compile the TypeScript files into JavaScript and then start the server on a predefined port. Once started, the server will be accessible via a browser or Postman.
 
 ### Development with Live Reloading
 
