@@ -1,0 +1,19 @@
+{
+  "name": "aws-node-typescript-express",
+  "version": "1.0.0",
+  "description": "A boilerplate for deploying an Express server to AWS Lambda using the Serverless Framework with TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/46ki75/aws-node-typescript-express.git"
+  },
+  "author": "Chomolungma Shirayuki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/46ki75/aws-node-typescript-express/issues"
+  },
+  "homepage": "https://github.com/46ki75/aws-node-typescript-express#readme"
+}
