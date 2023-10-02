@@ -8,6 +8,10 @@ provider:
   runtime: nodejs18.x
   region: ap-northeast-1
 
+package:
+  scripts:
+    predeploy: npm run build
+
 functions:
   api:
     handler: dist/lambda.handler
