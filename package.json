@@ -4,9 +4,9 @@
   "description": "A boilerplate for deploying an Express server to AWS Lambda using the Serverless Framework with TypeScript",
   "main": "dist/server.js",
   "scripts": {
+    "build": "tsc",
     "prestart": "tsc",
-    "start": "node dist/server.js",
-    "test": "jest"
+    "start": "node dist/server.js"
   },
   "repository": {
     "type": "git",
